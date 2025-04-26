@@ -1,5 +1,5 @@
 # Whack-a-Mole
-Visit Site:
+Visit Site: https://jahidajinar.github.io/Whack-a-Mole/
 
 A simple and interactive browser-based Whack-a-Mole (or Whack-a-Bear!) game built with HTML, CSS, and JavaScript.
 
