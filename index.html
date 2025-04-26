@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Whack-a-Mole</title>
+  <link rel="icon" href="bear.jpg">
+  <!-- Animate.css for entry animations -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1 class="animate__animated animate__fadeInDown">Whack-a-Mole!</h1>
+
+    <!-- Rules Interface -->
+    <section id="rules" class="animate__animated animate__fadeInDown">
+      <h2>Game Rules</h2>
+      <ul>
+        <li class="animate__animated animate__fadeInUp" style="--animate-delay:0.2s;">
+          Click the moles as they pop up.
+        </li>
+        <li class="animate__animated animate__fadeInUp" style="--animate-delay:0.4s;">
+          You have <strong>30 seconds</strong> to score as many as possible.
+        </li>
+        <li class="animate__animated animate__fadeInUp" style="--animate-delay:0.6s;">
+          Each mole only stays up briefly—be quick!
+        </li>
+      </ul>
+      <button id="startButton">Start Game</button>
+    </section>
+
+    <!-- Game Interface -->
+    <section id="game" class="hidden">
+      <div class="scoreboard">
+        Score: <span id="score">0</span> | Time: <span id="time">30</span>s
+      </div>
+      <div class="grid">
+        <!-- Nine holes -->
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+        <div class="hole"><div class="mole"></div></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
